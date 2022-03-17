@@ -2,7 +2,7 @@
     max-width: 400px;
     margin: 10vh auto 0 auto;
     box-shadow: 0px 0px 43px 17px rgbal(153,153,153,1);
-    background-color: rgb(143, 135, 135);
+    background-color: rgb(173, 207, 251);
 }
 #screen {
     text-align: right;
@@ -13,18 +13,26 @@
 }
 .buttons {
     display: grid;
-    border-bottom: 1px solid rgb(231, 231, 231);
-    border-left: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .buttons > div {
-    border-top: 1px solid rgb(231, 231, 231);
-    border-right: 1px solid rgb(231, 231, 231);
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
 }
 .button {
-    border: 0.5px solid rgb(231, 231, 231);
+    border: 0.5px solid #999;
     line-height: 100px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+}
+#equal {
+    background-color: rgb(14, 104, 248);
+    color: white;
+}
+.button:hover {
+    background-color: rgb(85, 85, 225);
+    color: white; 
 }
