@@ -4,6 +4,7 @@
     box-shadow: 0px 0px 43px 17px rgbal(153,153,153,1);
     background-color: rgb(173, 207, 251);
     border-radius: 25px;
+    border-width: 5px;
 }
 #screen {
     text-align: right;
