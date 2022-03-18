@@ -1,10 +1,17 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    
+}
 .container{
     max-width: 400px;
     margin: 10vh auto 0 auto;
     box-shadow: 0px 0px 43px 17px rgbal(153,153,153,1);
-    background-color: rgb(173, 207, 251);
-    border-radius: 25px;
-    border-width: 5px;
+    background-color: grey;
+    /* border-radius: 25px; */
+    border-width: 7px;
+    border-style:groove;
+    word-wrap: break-word;
+
 }
 #screen {
     text-align: right;
@@ -13,6 +20,10 @@
     padding: 16px 8px;
     font-size: 25px;
     border-radius: 25px;
+    background-color: rgba(172, 255, 47, 0.842);
+    border-style: inset;
+    word-wrap: break-word;
+
 }
 .buttons {
     display: grid;
@@ -25,6 +36,8 @@
     border-top: 1px solid #999;
     border-right: 1px solid #999;
     border-radius: 25px;
+    background-color: rgb(14, 13, 13);
+    color: aliceblue;
 }
 .button {
     border: 0.5px solid #999;
@@ -37,7 +50,11 @@
     background-color: rgb(14, 104, 248);
     color: white;
 }
+#clear {
+    background-color: red;
+}
 .button:hover {
-    background-color: rgb(140, 140, 209);
-    color: white;   
+    background-color: rgb(191, 219, 255);
+    color: white; 
+    transition: 0.5s;  
 }
