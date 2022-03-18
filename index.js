@@ -3,23 +3,25 @@ let buttons = Array.from(document.getElementsByClassName('button'));
     buttons.map(button => {
         button.addEventListener('click', (e) => {
             switch(e.target.innerText){
-                case 'C':
-                    display.innerText = '';
+                case 'Clear':
+                    screen.innerText = '';
                     break;
                 case '=':
                     try{
-                        display.innerText = eval(display.innerText);
+                        screen.innerText = eval(screen.innerText);
                     } catch {
-                        display.innerText = "Error"
+                        screen.innerText = "Error"
                     }
                     break;
                 case '←':
-                    if (display.innerText){
-                    display.innerText = display.innerText.slice(0, -1);
+                    if (screen.innerText){
+                    screen.innerText = screen.innerText.slice(0, -1);
                     }
                     break;
                 default:
-                    display.innerText += e.target.innerText;
+                    screen.innerText += e.target.innerText;
             }
         });
     });
+
+    
